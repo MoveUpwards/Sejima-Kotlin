@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="@string/menu_home"/>
+    </group>
+
+    <item android:title="@string/menu_components_separator">
+        <menu>
+            <item
+                    android:id="@+id/nav_mu_button"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="@string/menu_mu_button"/>
+            <item
+                    android:id="@+id/nav_mu_header"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="@string/menu_mu_header"/>
+            <item
+                    android:id="@+id/nav_mu_card"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="@string/menu_mu_card"/>
+            <item
+                    android:id="@+id/nav_mu_topbar"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="@string/menu_mu_topbar"/>
+            <item
+                    android:id="@+id/nav_mu_pincode"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="@string/menu_mu_pincode"/>
+            <item
+                    android:id="@+id/nav_mu_textfield"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="@string/menu_mu_textfield"/>
+            <item
+                    android:id="@+id/nav_mu_navigationbar"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="@string/menu_mu_navigationbar"/>
+            <item
+                    android:id="@+id/nav_mu_avatar"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="@string/menu_mu_avatar"/>
+            <item
+                    android:id="@+id/nav_mu_horizontalpager"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="@string/menu_mu_horizontalpager"/>
+        </menu>
+    </item>
+
+</menu>

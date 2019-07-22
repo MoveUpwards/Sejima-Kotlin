@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                    <dev.moveupwards.sejima.MUButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/mu_button"
+                            android:layout_centerInParent="true"
+                            android:text="@string/app_name"
+                            android:textColor="#000"
+                            app:border_alpha="1"
+                            app:cornerRadius="5dp"
+                            app:strokeColor="@color/colorPrimaryDark"
+                            app:strokeWidth="2dp"
+                            app:text_alignment="center"/>
+
+    </RelativeLayout>
+
+    <LinearLayout style="@style/Separator"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/control_mu_button_et_label"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/app_name"/>
+
+                <Button
+                        android:id="@+id/control_mu_button_label"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Apply"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Label color Black / Accent"/>
+
+                <Switch
+                        android:id="@+id/control_mu_button_title_color"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Label Normal / Bold"/>
+
+                <Switch
+                        android:id="@+id/control_mu_button_title_font"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Label size"/>
+
+                <Button
+                        android:id="@+id/control_mu_button_title_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_button_title_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Alignment"/>
+
+                <Button
+                        android:id="@+id/control_mu_button_left"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="start"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_button_center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="center"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_button_right"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="end"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Alpha 1.0 / 0.5"/>
+
+                <Switch
+                        android:id="@+id/control_mu_button_alpha"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Disabled alpha 0.7 / 0.3"/>
+
+                <Switch
+                        android:id="@+id/control_mu_button_disabled_alpha"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Press color Black / Accent"/>
+
+                <Switch
+                        android:id="@+id/control_mu_button_pressed_color"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Progressing color Black / Accent"/>
+
+                <Switch
+                        android:id="@+id/control_mu_button_progressing_color"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Loading"/>
+
+                <Switch
+                        android:id="@+id/control_mu_button_loading"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Background color Primary / Gray"/>
+
+                <Switch
+                        android:id="@+id/control_mu_button_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Corner radius"/>
+
+                <Button
+                        android:id="@+id/control_mu_button_radius_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_button_radius_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Border width"/>
+
+                <Button
+                        android:id="@+id/control_mu_button_border_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_button_border_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Border Dark / Accent"/>
+
+                <Switch
+                        android:id="@+id/control_mu_button_border_color"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Horizontal padding"/>
+
+                <Button
+                        android:id="@+id/control_mu_button_horizontal_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_button_horizontal_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Vertical padding"/>
+
+                <Button
+                        android:id="@+id/control_mu_button_vertical_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_button_vertical_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/control_mu_button_raz"
+                    android:layout_width="match_parent"
+                    android:text="Default values"
+                    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

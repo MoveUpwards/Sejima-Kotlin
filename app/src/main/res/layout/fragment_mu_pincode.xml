@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/colorPrimary">
+
+        <dev.moveupwards.sejima.MUPinCode
+                android:id="@+id/mu_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:corner_radius="18dp"
+                app:cell_spacing="10dp"
+                app:count="5"/>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#22154896">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Corner radius"/>
+
+                <Button
+                        android:id="@+id/control_mu_pincode_corner_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_pincode_corner_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Cell space"/>
+
+                <Button
+                        android:id="@+id/control_mu_pincode_space_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_pincode_space_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="PinCode length"/>
+
+                <Button
+                        android:id="@+id/control_mu_pincode_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_pincode_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Current code"/>
+
+                <Button
+                        android:id="@+id/control_mu_pincode_btn_get_code"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Get code"
+                        android:layout_height="wrap_content" />
+
+                <TextView
+                        android:id="@+id/control_mu_pincode_tv_code"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="current code"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/control_mu_pincode_et_code"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:hint="CODE"/>
+
+                <Button
+                        android:id="@+id/control_mu_pincode_btn_set_code"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Set Code"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

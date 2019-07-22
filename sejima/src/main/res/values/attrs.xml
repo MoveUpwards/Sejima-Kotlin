@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- -->
+    <attr name="title" format="string"/>
+    <attr name="title_size" format="dimension"/>
+    <attr name="title_color" format="color"/>
+    <attr name="title_font_style" format="reference"/>
+    <attr name="title_weight" format="enum">
+        <enum name="normal" value="0"/>
+        <enum name="bold" value="1"/>
+    </attr>
+    <attr name="detail" format="string"/>
+    <attr name="detail_size" format="dimension"/>
+    <attr name="detail_color" format="color"/>
+    <attr name="detail_font_style" format="reference"/>
+    <attr name="detail_weight" format="enum">
+        <enum name="normal" value="0"/>
+        <enum name="bold" value="1"/>
+    </attr>
+    <attr name="alignment" format="enum">
+        <enum name="start" value="8388611"/>
+        <enum name="end" value="8388613"/>
+        <enum name="center" value="17"/>
+    </attr>
+    <attr name="corner_radius" format="dimension"/>
+    <attr name="pressed_color" format="color"/>
+    <attr name="progressing_color" format="color"/>
+    <attr name="border_width" format="dimension"/>
+    <attr name="disable_alpha" format="float"/>
+    <attr name="border_color" format="color"/>
+    <attr name="is_loading" format="boolean"/>
+    <attr name="bkg_color" format="color"/>
+    <attr name="text_alignment" format="enum">
+        <enum name="start" value="3"/>
+        <enum name="center" value="17"/>
+        <enum name="end" value="5"/>
+    </attr>
+    <attr name="font_style" format="reference"/>
+
+    <!-- MUButton Attributes -->
+
+    <declare-styleable name="MUButton">
+        <attr name="android:alpha"/>
+        <attr name="android:text"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textSize"/>
+        <attr name="android:textStyle"/>
+        <attr name="strokeColor"/>
+        <attr name="strokeWidth"/>
+        <attr name="cornerRadius"/>
+        <attr name="font_style"/>
+        <attr name="bkg_color"/>
+        <attr name="disable_alpha"/>
+        <attr name="alignment"/>
+        <attr name="pressed_color"/>
+        <attr name="progressing_color"/>
+        <attr name="is_loading"/>
+        <attr name="border_alpha" format="float"/>
+        <attr name="android:paddingVertical"/>
+        <attr name="android:paddingHorizontal"/>
+    </declare-styleable>
+
+    <!-- MUHeader Attributes -->
+
+    <declare-styleable name="MUHeader">
+        <attr name="title"/>
+        <attr name="title_size"/>
+        <attr name="title_weight"/>
+        <attr name="title_color"/>
+        <attr name="title_font_style"/>
+        <attr name="alignment"/>
+        <attr name="detail"/>
+        <attr name="detail_size"/>
+        <attr name="detail_color"/>
+        <attr name="detail_font_style"/>
+        <attr name="detail_weight"/>
+        <attr name="vertical_spacing" format="dimension"/>
+    </declare-styleable>
+
+    <!-- MUCard Attributes -->
+
+    <declare-styleable name="MUCard">
+        <attr name="top_padding" format="dimension"/>
+        <attr name="content_left_padding" format="dimension"/>
+        <attr name="content_right_padding" format="dimension"/>
+        <attr name="content_top_padding" format="dimension"/>
+        <attr name="content_bottom_padding" format="dimension"/>
+        <attr name="border_width"/>
+        <attr name="border_color"/>
+        <attr name="corner_radius"/>
+        <attr name="title"/>
+        <attr name="title_size"/>
+        <attr name="title_color"/>
+        <attr name="title_font_style"/>
+        <attr name="alignment"/>
+        <attr name="detail"/>
+        <attr name="detail_size"/>
+        <attr name="detail_color"/>
+        <attr name="detail_font_style"/>
+        <attr name="android:background"/>
+        <attr name="android:paddingHorizontal"/>
+    </declare-styleable>
+
+    <!-- MUTopBar Attributes -->
+
+    <declare-styleable name="MUTopBar">
+        <attr name="title"/>
+        <attr name="title_size"/>
+        <attr name="title_weight"/>
+        <attr name="title_color"/>
+        <attr name="topbar_title_alignment" format="enum">
+            <enum name="start" value="20"/>
+            <enum name="end" value="21"/>
+            <enum name="center" value="17"/>
+        </attr>
+        <attr name="font_style"/>
+        <attr name="topbar_btn_img" format="reference"/>
+        <attr name="topbar_img_width" format="dimension"/>
+        <attr name="topbar_btn_left_padding" format="dimension"/>
+        <attr name="topbar_btn_leading" format="dimension"/>
+    </declare-styleable>
+
+    <!-- MUPinCode Attributes -->
+
+    <declare-styleable name="MUPinCode">
+        <attr name="font_style"/>
+        <attr name="corner_radius"/>
+        <attr name="count" format="integer"/>
+        <attr name="default_char" format="string"/>
+        <attr name="cell_spacing" format="dimension"/>
+        <attr name="cell_color" format="color"/>
+        <attr name="android:inputType"/>
+    </declare-styleable>
+
+    <!-- MUTextField Attributes -->
+
+    <declare-styleable name="MUTextField">
+        <attr name="title"/>
+        <attr name="title_size"/>
+        <attr name="title_weight"/>
+        <attr name="title_color"/>
+        <attr name="alignment"/>
+        <attr name="field_font_style" format="reference"/>
+        <attr name="title_font_style"/>
+        <attr name="is_secure" format="boolean"/>
+        <attr name="auto_correct" format="boolean"/>
+        <attr name="android:inputType"/>
+        <attr name="android:editable"/>
+        <attr name="android:hint"/>
+        <attr name="android:textColorHint"/>
+        <attr name="field" format="string"/>
+        <attr name="field_size" format="dimension"/>
+        <attr name="field_color" format="color"/>
+        <attr name="field_weight" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="bold" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- MUNavigationBar Attributes -->
+
+    <declare-styleable name="MUNavigationBar">
+        <attr name="android:src"/>
+        <attr name="separator_color" format="color"/>
+        <attr name="separator_width" format="dimension"/>
+        <attr name="separator_height_multiplier" format="float"/>
+        <attr name="separator_margins" format="dimension"/>
+        <attr name="android:text"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textSize"/>
+        <attr name="android:textStyle"/>
+        <attr name="alignment"/>
+        <attr name="font_style"/>
+        <attr name="pressed_color"/>
+        <attr name="progressing_color"/>
+        <attr name="border_width"/>
+        <attr name="border_color"/>
+        <attr name="corner_radius"/>
+        <attr name="is_loading"/>
+        <attr name="bkg_color"/>
+        <attr name="disable_alpha"/>
+        <attr name="android:paddingVertical"/>
+        <attr name="android:paddingHorizontal"/>
+    </declare-styleable>
+
+    <!-- MUAvatar Attributes -->
+
+    <declare-styleable name="MUAvatar">
+        <attr name="corner_radius"/>
+        <attr name="android:src"/>
+        <attr name="border_width"/>
+        <attr name="border_color"/>
+        <attr name="bkg_color"/>
+        <attr name="border_type" format="enum">
+            <enum name="square" value="0"/>
+            <enum name="circle" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- MUPageControl Attributes -->
+
+    <declare-styleable name="MUPageControl">
+        <attr name="element_height" format="dimension"/>
+        <attr name="element_width" format="dimension"/>
+        <attr name="element_color" format="color"/>
+        <attr name="active_element_width" format="dimension"/>
+        <attr name="active_element_radius" format="integer"/>
+        <attr name="active_element_color" format="color"/>
+        <attr name="element_border_color" format="color"/>
+        <attr name="element_border_width" format="dimension"/>
+        <attr name="element_padding" format="dimension"/>
+        <attr name="hide_for_single_page" format="boolean"/>
+        <attr name="android:paddingHorizontal"/>
+    </declare-styleable>
+</resources>

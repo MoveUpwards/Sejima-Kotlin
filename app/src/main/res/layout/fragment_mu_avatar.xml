@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/colorPrimary">
+
+        <dev.moveupwards.sejima.MUAvatar
+                android:id="@+id/mu_avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_menu_manage"
+                app:border_color="@color/colorPrimaryDark"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout style="@style/Separator"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Square / Circle"/>
+
+            <Switch
+                    android:id="@+id/control_mu_avatar_shape"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Avatar / Icon"/>
+
+            <Switch
+                    android:id="@+id/control_mu_avatar_image"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Corner radius"/>
+
+            <Button
+                    android:id="@+id/control_mu_avatar_radius_less"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:layout_height="wrap_content" />
+
+            <Button
+                    android:id="@+id/control_mu_avatar_radius_more"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="+"
+                    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Bkg Color / No-Color"/>
+
+            <Switch
+                    android:id="@+id/control_mu_avatar_bkg"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Border Dark / Accent"/>
+
+            <Switch
+                    android:id="@+id/control_mu_avatar_border_color"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Border width"/>
+
+            <Button
+                    android:id="@+id/control_mu_avatar_border_less"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:layout_height="wrap_content" />
+
+            <Button
+                    android:id="@+id/control_mu_avatar_border_more"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="+"
+                    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/control_mu_avatar_raz"
+                android:layout_width="match_parent"
+                android:text="Default values"
+                android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

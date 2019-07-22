@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+        <dev.moveupwards.sejima.MUHorizontalPager
+                android:id="@+id/mu_horizontalpager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#ffffff" />
+
+        <dev.moveupwards.sejima.MUPageControl
+                android:id="@+id/mu_pagecontrol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:element_border_color="#ff5019"
+                android:background="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/Separator"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Navigation"/>
+
+                <Button
+                        android:id="@+id/control_mu_horizontalpager_previous"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="prev"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_horizontalpager_next"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="next"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Horizontal margins"/>
+
+                <Button
+                        android:id="@+id/control_mu_horizontalpager_margin_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_horizontalpager_margin_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Corner radius"/>
+
+                <Button
+                        android:id="@+id/control_mu_horizontalpager_corner_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_horizontalpager_corner_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Control padding"/>
+
+                <Button
+                        android:id="@+id/control_mu_horizontalpager_control_padding_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_horizontalpager_control_padding_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Border Color Accent / Black"/>
+
+                <Switch
+                        android:id="@+id/control_mu_horizontalpager_border_color"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Control border"/>
+
+                <Button
+                        android:id="@+id/control_mu_horizontalpager_control_border_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_horizontalpager_control_border_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Listener Off / On"/>
+
+                <Switch
+                        android:id="@+id/control_mu_horizontalpager_listener"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/Separator"/>
+
+            <Button
+                    android:id="@+id/control_mu_horizontalpager_raz"
+                    android:layout_width="match_parent"
+                    android:text="Default values"
+                    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

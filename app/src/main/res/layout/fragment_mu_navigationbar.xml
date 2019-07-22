@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/colorPrimaryDark">
+
+        <dev.moveupwards.sejima.MUNavigationBar
+                android:id="@+id/mu_navbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:separator_width="2dp"
+                app:separator_color="@color/colorPrimaryDark"
+                app:separator_margins="12dp"
+                app:separator_height_multiplier="0.8"
+                android:text="@string/app_name"/>
+
+    </RelativeLayout>
+
+    <LinearLayout style="@style/Separator"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Background color grey / Accent"/>
+
+                <Switch
+                        android:id="@+id/control_mu_navbar_bkg_color"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Avatar / Icon"/>
+
+                <Switch
+                        android:id="@+id/control_mu_navbar_image"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Separator color black / primary"/>
+
+                <Switch
+                        android:id="@+id/control_mu_navbar_separator_color"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Separator width"/>
+
+                <Button
+                        android:id="@+id/control_mu_navbar_separator_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_navbar_separator_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Separator multiplier"/>
+
+                <Button
+                        android:id="@+id/control_mu_navbar_separator_multi_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_navbar_separator_multi_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/control_mu_topbar_raz"
+                    android:layout_width="match_parent"
+                    android:text="Default values"
+                    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

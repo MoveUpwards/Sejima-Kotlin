@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/colorPrimary">
+
+        <dev.moveupwards.sejima.MUHeader
+                android:id="@+id/mu_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                app:title="@string/title"
+                app:detail="@string/detail"/>
+
+    </RelativeLayout>
+
+    <LinearLayout style="@style/Separator"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/control_mu_header_et_title"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/title"/>
+
+                <Button
+                        android:id="@+id/control_mu_header_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Apply" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Title color Black / Accent"/>
+
+                <Switch
+                        android:id="@+id/control_mu_header_title_color"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Title Normal / Bold"/>
+
+                <Switch
+                        android:id="@+id/control_mu_header_title_font"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Title size"/>
+
+                <Button
+                        android:id="@+id/control_mu_header_title_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_header_title_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/control_mu_header_et_details"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/detail"/>
+
+                <Button
+                        android:id="@+id/control_mu_header_details"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Apply"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Detail color Primary / Accent"/>
+
+                <Switch
+                        android:id="@+id/control_mu_header_details_color"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Detail Normal / Bold"/>
+
+                <Switch
+                        android:id="@+id/control_mu_header_details_font"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Detail size"/>
+
+                <Button
+                        android:id="@+id/control_mu_header_details_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_header_details_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Vertical spacing"/>
+
+                <Button
+                        android:id="@+id/control_mu_header_vertical_less"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_header_vertical_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Alignment"/>
+
+                <Button
+                        android:id="@+id/control_mu_header_left"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="left"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_header_center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="center"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:id="@+id/control_mu_header_right"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="right"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/control_mu_header_raz"
+                    android:layout_width="match_parent"
+                    android:text="Default values"
+                    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
