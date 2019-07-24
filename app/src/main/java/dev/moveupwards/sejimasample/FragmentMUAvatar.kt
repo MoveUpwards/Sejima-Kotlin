@@ -8,6 +8,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 
 import dev.moveupwards.sejima.MUAvatar
+import kotlinx.android.synthetic.main.fragment_mu_avatar.*
 
 internal class FragmentMUAvatar : FragmentDefault() {
 
@@ -25,7 +26,9 @@ internal class FragmentMUAvatar : FragmentDefault() {
         val cornerRadius = mMUAvatar.cornerRadius
         val borderWidth = mMUAvatar.borderWidth
 
-        mMUAvatar.clickListener = { Toast.makeText(context, "Click on avatar", Toast.LENGTH_SHORT).show() }
+        mMUAvatar.clickListener = {
+            Toast.makeText(context, "Click on avatar", Toast.LENGTH_SHORT).show()
+        }
 
         //Border type
         (view.findViewById<View>(R.id.control_mu_avatar_shape) as Switch).setOnCheckedChangeListener { _, isChecked ->

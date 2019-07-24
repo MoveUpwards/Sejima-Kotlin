@@ -7,6 +7,7 @@ import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import android.view.Gravity
 import android.view.View
+import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -90,15 +91,15 @@ class MUNavigationBar : LinearLayout, MUViewHelper {
     private var mSeparatorMargins = pixelsToDensity(resources.displayMetrics, 8f).toInt().toFloat()
 
     /**
-     * The MUNavigationBarListener listener
-     */
-    /**
      * Get the listener attached to the view, null if there is not
      * @return the listener
      */
-
+    /**
+     * Set the current listener
+     * @property listener the listener as MUNavigationBarListener
+     */
     var listener: MUNavigationBarListener? = null
-        private set
+
     /**
      * Get the current label
      * @return the current label as String
@@ -465,6 +466,7 @@ class MUNavigationBar : LinearLayout, MUViewHelper {
         right.width = LayoutParams.MATCH_PARENT
         right.height = LayoutParams.WRAP_CONTENT
         mRightButton?.layoutParams = right
+        mRightButton?.setHorizontalGravity(Gravity.CENTER)
 
         val left = mSeparator?.layoutParams as LayoutParams
         left.width = mSeparatorWidth.toInt()
@@ -479,17 +481,6 @@ class MUNavigationBar : LinearLayout, MUViewHelper {
         labelAlignment = textAlignment
     }
 
-
-    /**
-     * Attached a listener to handle user clicks
-     * @param listener the interface listener
-     */
-
-    fun setMUNavigationBarListener(listener: MUNavigationBarListener) {
-        this.listener = listener
-    }
-
-
     /**
      * Interface to handle user clicks
      */
@@ -499,7 +490,6 @@ class MUNavigationBar : LinearLayout, MUViewHelper {
          * Handle left clicks
          * @param muNavigationBar the current view
          */
-
         fun clickOnLeftButton(muNavigationBar: MUNavigationBar)
 
 
@@ -507,7 +497,6 @@ class MUNavigationBar : LinearLayout, MUViewHelper {
          * Handle right clicks
          * @param muNavigationBar the current view
          */
-
         fun clickOnRightButton(muNavigationBar: MUNavigationBar)
     }
 }

@@ -25,7 +25,7 @@ internal class FragmentMUNavigationBar : FragmentDefault() {
         val sepWidth = mMUNavigationBar.separatorWidth
         val sepMul = mMUNavigationBar.separatorMultiplier
 
-        mMUNavigationBar.setMUNavigationBarListener(object : MUNavigationBar.MUNavigationBarListener {
+        mMUNavigationBar.listener = object : MUNavigationBar.MUNavigationBarListener {
             override fun clickOnLeftButton(muNavigationBar: MUNavigationBar) {
                 Toast.makeText(context, "Click on left button", Toast.LENGTH_SHORT).show()
             }
@@ -33,7 +33,7 @@ internal class FragmentMUNavigationBar : FragmentDefault() {
             override fun clickOnRightButton(muNavigationBar: MUNavigationBar) {
                 Toast.makeText(context, "Click on right button", Toast.LENGTH_SHORT).show()
             }
-        })
+        }
 
         // Bkg color
         (view.findViewById<View>(R.id.control_mu_navbar_bkg_color) as Switch).setOnCheckedChangeListener { _, isChecked ->

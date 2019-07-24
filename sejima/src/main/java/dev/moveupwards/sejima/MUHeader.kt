@@ -305,45 +305,59 @@ class MUHeader : RelativeLayout, MUViewHelper {
     constructor(context: Context, attributes: TypedArray?) : super(context) {
 
         if (null != attributes) {
-
-            mTitle = if (attributes.hasValue(R.styleable.MUCard_title))
+            mTitle = if (attributes.hasValue(R.styleable.MUCard_title)) {
                 attributes.getString(R.styleable.MUCard_title)
-            else
+            } else {
                 mTitle
-            mTitleColor = if (attributes.hasValue(R.styleable.MUCard_title_color))
+            }
+
+            mTitleColor = if (attributes.hasValue(R.styleable.MUCard_title_color)) {
                 attributes.getColor(R.styleable.MUCard_title_color, mTitleColor)
-            else
+            } else {
                 mTitleColor
-            mTitleSize = if (attributes.hasValue(R.styleable.MUCard_title_size))
+            }
+
+            mTitleSize = if (attributes.hasValue(R.styleable.MUCard_title_size)) {
                 attributes.getDimensionPixelSize(R.styleable.MUCard_title_size, mTitleSize)
-            else
+            } else {
                 mTitleSize
-            mTitleFontStyle = if (attributes.hasValue(R.styleable.MUCard_title_font_style))
+            }
+
+            mTitleFontStyle = if (attributes.hasValue(R.styleable.MUCard_title_font_style)) {
                 attributes.getResourceId(R.styleable.MUCard_title_font_style, mTitleFontStyle)
-            else
+            } else {
                 mTitleFontStyle
+            }
 
-            mDetail = if (attributes.hasValue(R.styleable.MUCard_detail))
+            mDetail = if (attributes.hasValue(R.styleable.MUCard_detail)) {
                 attributes.getString(R.styleable.MUCard_detail)
-            else
+            } else {
                 mDetail
-            mDetailColor = if (attributes.hasValue(R.styleable.MUCard_detail_color))
-                attributes.getColor(R.styleable.MUCard_detail_color, mDetailColor)
-            else
-                mDetailColor
-            mDetailSize = if (attributes.hasValue(R.styleable.MUCard_detail_size))
-                attributes.getDimensionPixelSize(R.styleable.MUCard_detail_size, mDetailSize)
-            else
-                mDetailSize
-            mDetailFontStyle = if (attributes.hasValue(R.styleable.MUCard_detail_font_style))
-                attributes.getResourceId(R.styleable.MUCard_detail_font_style, mDetailFontStyle)
-            else
-                mDetailFontStyle
+            }
 
-            mAlignment = if (attributes.hasValue(R.styleable.MUCard_alignment))
+            mDetailColor = if (attributes.hasValue(R.styleable.MUCard_detail_color)) {
+                attributes.getColor(R.styleable.MUCard_detail_color, mDetailColor)
+            } else {
+                mDetailColor
+            }
+
+            mDetailSize = if (attributes.hasValue(R.styleable.MUCard_detail_size)) {
+                attributes.getDimensionPixelSize(R.styleable.MUCard_detail_size, mDetailSize)
+            } else {
+                mDetailSize
+            }
+
+            mDetailFontStyle = if (attributes.hasValue(R.styleable.MUCard_detail_font_style)) {
+                attributes.getResourceId(R.styleable.MUCard_detail_font_style, mDetailFontStyle)
+            } else {
+                mDetailFontStyle
+            }
+
+            mAlignment = if (attributes.hasValue(R.styleable.MUCard_alignment)) {
                 attributes.getInt(R.styleable.MUCard_alignment, mAlignment)
-            else
+            } else {
                 mAlignment
+            }
         }
 
         init()

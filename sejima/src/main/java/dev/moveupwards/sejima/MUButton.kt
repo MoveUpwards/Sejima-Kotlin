@@ -129,7 +129,6 @@ class MUButton : RelativeLayout, MUViewHelper {
 
     private var mFontStyle = -1
 
-
     /**
      * The main button
      */
@@ -440,7 +439,6 @@ class MUButton : RelativeLayout, MUViewHelper {
             }
         }
 
-
     /**
      * Default constructor
      * @param context the view context
@@ -448,7 +446,6 @@ class MUButton : RelativeLayout, MUViewHelper {
     constructor(context: Context) : super(context) {
         init(context)
     }
-
 
     /**
      * Constructor with attributes
@@ -502,75 +499,96 @@ class MUButton : RelativeLayout, MUViewHelper {
             } else {
                 mDisabledAlpha
             }
+
             mBkgColor = if (attributes.hasValue(R.styleable.MUNavigationBar_bkg_color)) {
                 attributes.getColor(R.styleable.MUNavigationBar_bkg_color, mBkgColor)
             } else {
                 mBkgColor
             }
+
             mLabel = if (attributes.hasValue(R.styleable.MUNavigationBar_android_text)) {
                 attributes.getString(R.styleable.MUNavigationBar_android_text)
             } else {
                 mLabel
             }
+
             mLabelColor = if (attributes.hasValue(R.styleable.MUNavigationBar_android_textColor)) {
                 attributes.getColor(R.styleable.MUNavigationBar_android_textColor, mLabelColor)
             } else {
                 mLabelColor
             }
+
             mLabelFontSize = if (attributes.hasValue(R.styleable.MUNavigationBar_android_textSize)) {
                 attributes.getDimension(R.styleable.MUNavigationBar_android_textSize, mLabelFontSize) // was getDimensionPixelSize
             } else {
                 mLabelFontSize
             }
+
             mLabelFontWeight = if (attributes.hasValue(R.styleable.MUNavigationBar_android_textStyle)) {
                 attributes.getColor(R.styleable.MUNavigationBar_android_textStyle, mLabelFontWeight)
             } else {
                 mLabelFontWeight
             }
+
             mLabelAlignment = if (attributes.hasValue(R.styleable.MUNavigationBar_alignment)) {
                 attributes.getInt(R.styleable.MUNavigationBar_alignment, mLabelAlignment)
             } else {
                 mLabelAlignment
             }
+
             mLabelHighLightedColor = if (attributes.hasValue(R.styleable.MUNavigationBar_pressed_color)) {
                 attributes.getInt(R.styleable.MUNavigationBar_pressed_color, mLabelHighLightedColor)
             } else {
                 mLabelHighLightedColor
             }
+
             mProgressingColor = if (attributes.hasValue(R.styleable.MUNavigationBar_progressing_color)) {
                 attributes.getInt(R.styleable.MUNavigationBar_progressing_color, mProgressingColor)
             } else {
                 mProgressingColor
             }
+
             mBorderWidth = if (attributes.hasValue(R.styleable.MUNavigationBar_border_width)) {
-                attributes.getDimension(R.styleable.MUNavigationBar_border_width, 0f) // was getDimensionPixelSize
+                attributes.getDimension(R.styleable.MUNavigationBar_border_width, 0f) // was => getDimensionPixelSize
             } else {
                 mBorderWidth
             }
-            mBorderColor = if (attributes.hasValue(R.styleable.MUNavigationBar_border_color))
+
+            mBorderColor = if (attributes.hasValue(R.styleable.MUNavigationBar_border_color)) {
                 attributes.getColor(R.styleable.MUNavigationBar_border_color, mBorderColor)
-            else
+            } else {
                 mBorderColor
-            mCornerRadius = if (attributes.hasValue(R.styleable.MUNavigationBar_corner_radius))
+            }
+
+            mCornerRadius = if (attributes.hasValue(R.styleable.MUNavigationBar_corner_radius)) {
                 attributes.getDimensionPixelSize(R.styleable.MUNavigationBar_corner_radius, mCornerRadius)
-            else
+            } else {
                 mBorderColor
-            mIsLoading = if (attributes.hasValue(R.styleable.MUNavigationBar_is_loading))
+            }
+
+            mIsLoading = if (attributes.hasValue(R.styleable.MUNavigationBar_is_loading)) {
                 attributes.getBoolean(R.styleable.MUNavigationBar_is_loading, false)
-            else
+            } else {
                 mIsLoading
-            mHorizontalPadding = if (attributes.hasValue(R.styleable.MUNavigationBar_android_paddingHorizontal))
+            }
+
+            mHorizontalPadding = if (attributes.hasValue(R.styleable.MUNavigationBar_android_paddingHorizontal)) {
                 attributes.getDimensionPixelSize(R.styleable.MUNavigationBar_android_paddingHorizontal, mHorizontalPadding)
-            else
+            } else {
                 mHorizontalPadding
-            mVerticalPadding = if (attributes.hasValue(R.styleable.MUNavigationBar_android_paddingVertical))
+            }
+
+            mVerticalPadding = if (attributes.hasValue(R.styleable.MUNavigationBar_android_paddingVertical)) {
                 attributes.getDimensionPixelSize(R.styleable.MUNavigationBar_android_paddingVertical, mVerticalPadding)
-            else
+            } else {
                 mVerticalPadding
-            mFontStyle = if (attributes.hasValue(R.styleable.MUNavigationBar_font_style))
+            }
+
+            mFontStyle = if (attributes.hasValue(R.styleable.MUNavigationBar_font_style)) {
                 attributes.getResourceId(R.styleable.MUNavigationBar_font_style, mFontStyle)
-            else
+            } else {
                 mFontStyle
+            }
         }
 
         init(context)
@@ -579,13 +597,8 @@ class MUButton : RelativeLayout, MUViewHelper {
     private fun init(context: Context) {
 
         button = MaterialButton(context)
-        button?.gravity = Gravity.CENTER
         button?.isAllCaps = false
         button?.id = View.generateViewId()
-        addView(button)
-
-        progressBar = ProgressBar(context)
-        progressBar?.isIndeterminate = true
 
         val lp2 = LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
         button?.let {
@@ -594,6 +607,10 @@ class MUButton : RelativeLayout, MUViewHelper {
             lp2.addRule(ALIGN_TOP, it.id)
             lp2.addRule(ALIGN_BOTTOM, it.id)
         }
+        addView(button)
+
+        progressBar = ProgressBar(context)
+        progressBar?.isIndeterminate = true
         addView(progressBar, lp2)
 
         // Background
@@ -622,8 +639,6 @@ class MUButton : RelativeLayout, MUViewHelper {
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec)
-        button?.width = measuredWidth
-        button?.height = measuredHeight
 
         button?.setPadding(mHorizontalPadding, mVerticalPadding, mHorizontalPadding, mVerticalPadding)
         progressBar?.setPadding(mHorizontalPadding, mVerticalPadding, mHorizontalPadding, mVerticalPadding)
@@ -642,7 +657,6 @@ class MUButton : RelativeLayout, MUViewHelper {
         return mAlpha
     }
 
-
     /**
      * Set the background alpha
      * @param alpha the background alpha as float
@@ -659,7 +673,6 @@ class MUButton : RelativeLayout, MUViewHelper {
         labelAlignment = textAlignment
     }
 
-
     private fun updateColorWithAlphaValues() {
         mBkgColor = ColorUtils.setAlphaComponent(mBkgColor, (mAlpha * 255).toInt())
         mBorderColor = ColorUtils.setAlphaComponent(mBorderColor, (mBorderAlpha * 255).toInt())
@@ -669,9 +682,9 @@ class MUButton : RelativeLayout, MUViewHelper {
      * Set the background color for different states of the button
      */
     private fun setBackgroundColors() {
-        val colors = intArrayOf(mBorderColor, // pressed color
+        val colors = intArrayOf(mBorderColor,                                                      // pressed color
             ColorUtils.setAlphaComponent(mBorderColor, (mAlpha * mDisabledAlpha * 255f).toInt()), // disabled color
-            mBkgColor                                                                               // default color
+            mBkgColor                                                                            // default color
         )
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -684,8 +697,8 @@ class MUButton : RelativeLayout, MUViewHelper {
      */
     private fun setFontColors() {
         val colors = intArrayOf(mLabelHighLightedColor, // pressed color
-            mLabelHighLightedColor, // disabled color
-            mLabelColor                                                                             // default color
+            mLabelHighLightedColor,                    // disabled color
+            mLabelColor                               // default color
         )
 
         button?.setTextColor(ColorStateList(STATES, colors))
